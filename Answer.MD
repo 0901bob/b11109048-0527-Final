@@ -87,6 +87,26 @@ Prompt C：請修改檔案讀取與寫入程序，使用標準 JSON 結構存取
 > 系統關閉
 ```
 
+```log
+> add 深入淺出Python/978001/available
+ISBN Exist
+> add 資料結構理論/978002/available
+ISBN Exist
+> add 演算法實作/978003/available
+ISBN Exist
+> add 重複測試書/978001/available
+ISBN Exist
+> borrow 978002
+Updated
+> show
+書名: Book One, ISBN: 12345, 狀態: borrowed
+書名: 深入淺出Python, ISBN: 978001, 狀態: available
+書名: 資料結構理論, ISBN: 978002, 狀態: borrowed
+書名: 演算法實作, ISBN: 978003, 狀態: available
+> exit
+系統關閉 (refined)
+```
+
 ### 3.2 產出的資料檔案格式
 
 請貼上重構後生成的 `books.json` 前幾行內容：
@@ -97,6 +117,21 @@ Prompt C：請修改檔案讀取與寫入程序，使用標準 JSON 結構存取
         "title": "Book One",
         "isbn": "12345",
         "status": "borrowed"
+    },
+    {
+        "title": "深入淺出Python",
+        "isbn": "978001",
+        "status": "available"
+    },
+    {
+        "title": "資料結構理論",
+        "isbn": "978002",
+        "status": "borrowed"
+    },
+    {
+        "title": "演算法實作",
+        "isbn": "978003",
+        "status": "available"
     }
 ]
 ```
@@ -112,12 +147,18 @@ Prompt C：請修改檔案讀取與寫入程序，使用標準 JSON 結構存取
 # 請在此處貼上 git log 內容
 ```
 
+```log
+27fa685 (HEAD -> main) feat: add messy_tracker and refined_tracker demo scripts
+192e231 (origin/main) Refactor legacy library to modern JSON-based library and complete Answer.MD analysis
+```
+
 ### 4.2. GitHub Repository 連結(此小題7分)
 
 將專案推送到 GitHub (Public) 若提交到 Private 連結不給分。 請設定 Repository 名稱為 `學號-0527-Final` Ex: B11526748-0527-Final **請用 - 不是 _**
 
 ```log
 # 請貼上你的 Repo 網址
+https://github.com/0901bob/b11109048-0527-Final
 ```
 
 希望這兩份 Markdown 格式能幫你省下不少排版時間！祝你的考試順利舉行！
